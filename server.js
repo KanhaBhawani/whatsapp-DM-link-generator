@@ -10,10 +10,10 @@ app.get("/", function (req, res) {
 
 app.post("/", function (req, res) {
     var phoneNo = req.body.phone;
-    // res.send('<a href="https://wa.me/+91' + phoneNo + '"></a>');
-    res.send(phoneNo);
+    res.send('<a href="https://wa.me/+91' + phoneNo + '">click here</a>');
+    // res.send(phoneNo);
 });
 
 app.listen(3000, function () {
-    console.log("server started");
+    console.log("server started at localhost:3000");
 })
