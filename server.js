@@ -4,6 +4,9 @@ const bodyParser = require("body-parser");
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 
+const port = 3000;
+const hostname = '0.0.0.0';
+
 app.get("/", function (req, res) {
     res.sendFile(__dirname + "/index.html");
 });
@@ -14,6 +17,6 @@ app.post("/", function (req, res) {
     // res.send(phoneNo);
 });
 
-app.listen(3000, function () {
-    console.log("server started at localhost:3000");
+app.listen(port, hostname, function () {
+    console.log('server running at http://'+hostname+':'+port+'/');
 })
