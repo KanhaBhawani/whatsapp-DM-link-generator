@@ -19,6 +19,7 @@
   "homepage": "https://github.com/KanhaBhawani/whatsapp-DM-link-generator#readme",
   "dependencies": {
     "body-parser": "^1.19.2",
+    "cheerio": "^1.0.0-rc.11",
     "express": "^4.17.3"
   }
 }

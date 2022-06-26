@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Page</title>
+</head>
+<body>
+    <div class="outputDiv">
+        <p id="otp_p"></p>
+        <a href="" id="otp">Continue to chat</a>
+    </div>
+
+    <script>
+        var phn = localStorage.getItem("phoneNo");
+        document.getElementById("otp").href = "https://wa.me/+91" + phn;
+        document.getElementById("otp_p").innerText = "Chat on WhatsApp with +91 " + phn;
+        console.log("inside link");
+    </script>
+
+</body>
+</html>
